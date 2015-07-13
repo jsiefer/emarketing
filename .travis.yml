@@ -6,6 +6,7 @@ before_install:
 install: npm install
 before_script: 
  - mv ./grunt/local.travis.js ./grunt/local.js 
+ - composer install
  - grunt pack
 script:
   - ./travis.sh
