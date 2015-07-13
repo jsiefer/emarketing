@@ -8,6 +8,6 @@ before_install:
 install: npm install
 before_script: 
  - mv ./grunt/local.travis.js ./grunt/local.js 
- - grunt build
+ - grunt pack
 script:
   - ./travis.sh
